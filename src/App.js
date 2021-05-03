@@ -13,7 +13,9 @@ import data from "./components/util"; //i am writing data here but it doesnt exi
 
 function App() {
   //state
-  const [songs, setSongs] = useState(data()); //if I console log data() , then we'll receive the array of objects we defined in util
+
+  //const [songs, setSongs] = useState(data());
+  const [songs] = useState(data()); //if I console log data() , then we'll receive the array of objects we defined in util
   //hence after the above code songs will be an array having the data of chillHop function's objects
   const [currentSong, setCurrentSong] = useState(songs[0]);
 
